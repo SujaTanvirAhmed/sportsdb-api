@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+#loader {
+    position: absolute;
+    top: 9%;
+    left: 26%;
+    width: 60px;
+    height: 60px;
+    border: 10px solid lightgray;
+    border-top: 10px solid dodgerblue;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+#display {
+    display: none;
+}
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+h1 {
+    text-align: center;
+}
+form {
+    width: 550px;
+    margin: 30px auto;
+}
+form input {
+    width: 80%;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+form button {
+    width: 18%;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+footer {
+    background-color: #444;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+footer p {
+    text-align: center;
+    padding: 50px 0;
+}
+footer span {
+    font-style: italic;
+    color: dodgerblue;
+}
